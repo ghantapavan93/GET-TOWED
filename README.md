@@ -95,8 +95,7 @@ Meanwhile, towing companies need a reliable operations tool to:
 
 ---
 
-### ✅ Screenshot 01 — Vehicle Owner Portal: Plate Lookup + Tow Details
-**File:** `docs/screenshots/towed-1.png`  
+### ✅ Screenshot 01 — Vehicle Owner Portal: Plate Lookup + Tow Details 
 Shows the **public owner flow** where a vehicle owner searches by plate and immediately sees the **tow record** (reason, location, date, fine, towing company + email). This demonstrates **read-path correctness** from the SQL database to the React user interface.
 
 <img width="1594" height="872" alt="towed-1" src="https://github.com/user-attachments/assets/8419692e-41a5-4705-95db-5e691d3f4d52" />
@@ -104,15 +103,13 @@ Shows the **public owner flow** where a vehicle owner searches by plate and imme
 ---
 
 ### ✅ Screenshot 02 — Vehicle Owner Portal: Tow Details + Payment Section
-**File:** `docs/screenshots/towed-2.png`  
 Shows the **payment section** enabled after a successful plate search. This highlights the **end-to-end workflow** (lookup → render → pay) and validates that payment actions are modeled as **database-backed operations**.
 
 <img width="1499" height="836" alt="towed-2" src="https://github.com/user-attachments/assets/81ed83e4-b501-4f8f-b94f-b74b617a4d62" />
 
 ---
 
-### ✅ Screenshot 03 — Vehicle Owner Portal: File a Dispute (Query Submission)
-**File:** `docs/screenshots/Towed- 3.png`  
+### ✅ Screenshot 03 — Vehicle Owner Portal: File a Dispute (Query Submission) 
 Shows the **dispute/query filing interface** where owners can submit a structured complaint for a tow record. This proves the system supports an **operations queue** style workflow that persists queries into SQL for later review.
 
 <img width="1994" height="791" alt="Towed- 3" src="https://github.com/user-attachments/assets/6ada1fa7-ec06-4af7-83c0-4561cbdcc968" />
@@ -120,7 +117,6 @@ Shows the **dispute/query filing interface** where owners can submit a structure
 ---
 
 ### ✅ Screenshot 04 — Towing Company Access: Sign Up (Authenticated Portal)
-**File:** `docs/screenshots/Towed- 4.png`  
 Shows towing-company-only account creation. This demonstrates the system separates **public users** from **operational towing users**, a realistic access-control boundary for internal tooling.
 
 <img width="1602" height="806" alt="Towed- 4" src="https://github.com/user-attachments/assets/8cf45470-054e-4eda-89d0-7783ee040460" />
@@ -128,8 +124,7 @@ Shows towing-company-only account creation. This demonstrates the system separat
 
 ---
 
-### ✅ Screenshot 05 — Towing Company Access: Log In (Restricted Operations)
-**File:** `docs/screenshots/towed-5.png`  
+### ✅ Screenshot 05 — Towing Company Access: Log In (Restricted Operations) 
 Shows the login gate required before inserting or viewing towing records. This highlights controlled access to write paths (create tow records) and prevents unauthorized updates to operational data.
 
 <img width="3444" height="800" alt="towed-5" src="https://github.com/user-attachments/assets/818cb31a-49ad-4656-823d-14c20e42d84e" />
@@ -138,7 +133,6 @@ Shows the login gate required before inserting or viewing towing records. This h
 ---
 
 ### ✅ Screenshot 06 — Towing Company Portal: Insert Tow Record (Create Operation)
-**File:** `docs/screenshots/towed-6.png`  
 Shows the structured input form used to create a tow record (Vehicle ID, plate number, reason, location, date, fine, towing company + email). This demonstrates a **full create workflow** (React form → Flask route → SQL persistence).
 
 <img width="1661" height="835" alt="towed-6" src="https://github.com/user-attachments/assets/92b15daa-2a0c-40a8-a860-7f4c1e7c83a5" />
@@ -148,7 +142,6 @@ Shows the structured input form used to create a tow record (Vehicle ID, plate n
 ---
 
 ### ✅ Screenshot 07 — Towing Company Portal: SQL-Backed Table View (Read Operation)
-**File:** `docs/screenshots/towed-7.png`  
 Shows the towing-company view where inserted vehicles appear as a table. This confirms the create action is persisted correctly and immediately visible, validating **write + read consistency** across the stack.
 
 
@@ -156,8 +149,7 @@ Shows the towing-company view where inserted vehicles appear as a table. This co
 
 ---
 
-### ✅ Screenshot 08 — Admin Panel: User Management (List View)
-**File:** `docs/screenshots/towed-8.png`  
+### ✅ Screenshot 08 — Admin Panel: User Management (List View) 
 Shows the admin dashboard listing users. This demonstrates the system has a **centralized operations panel** for governance and system control, supporting real-world workflows like audits, user lifecycle management, and administrative oversight.
 
 <img width="1658" height="807" alt="towed-8" src="https://github.com/user-attachments/assets/2a0d3c17-2bbc-4b17-9be9-0bd16d19734f" />
@@ -165,15 +157,13 @@ Shows the admin dashboard listing users. This demonstrates the system has a **ce
 ---
 
 ### ✅ Screenshot 09 — Admin Panel: Create User (Admin Mutation Workflow)
-**File:** `docs/screenshots/towed-9.png`  
 Shows the admin create user form, proving the platform supports controlled admin-only system mutations and operational onboarding flows through a structured interface.
 
 <img width="1665" height="824" alt="towed-9" src="https://github.com/user-attachments/assets/bfeb1797-c649-42b1-ba35-3c7bfbff065d" />
 
 ---
 
-### ✅ Screenshot 10 — Admin Panel: Payments Dashboard (Status Tracking)
-**File:** `docs/screenshots/towed-10.png`  
+### ✅ Screenshot 10 — Admin Panel: Payments Dashboard (Status Tracking) 
 Shows payment records with explicit operational states (**Paid / Pending / Failed**). This demonstrates a realistic payment lifecycle modeling approach where each transaction is stored and trackable for operations and auditing.
 
 
@@ -181,8 +171,7 @@ Shows payment records with explicit operational states (**Paid / Pending / Faile
 
 ---
 
-### ✅ Screenshot 11 — Admin Panel: Payments Dashboard (Operational Visibility)
-**File:** `docs/screenshots/towed-11.png`  
+### ✅ Screenshot 11 — Admin Panel: Payments Dashboard (Operational Visibility)  
 A second view of payment admin operations (alternate view/scroll). This reinforces the platform’s **status-driven operations model** and shows that transaction records are visible and manageable within the admin interface.
 
 
